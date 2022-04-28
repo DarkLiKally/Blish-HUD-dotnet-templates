@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blish_HUD.ModuleTemplate", "templates\Blish_HUD.ModuleTemplate\Blish_HUD.ModuleTemplate.csproj", "{4BB0BBE3-6A26-4F54-A275-51D077148775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blish_HUD.TemplatePack", "Blish_HUD.TemplatePack.csproj", "{391AA829-0D4F-47FE-85B4-5E271316E157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BB0BBE3-6A26-4F54-A275-51D077148775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB0BBE3-6A26-4F54-A275-51D077148775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB0BBE3-6A26-4F54-A275-51D077148775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB0BBE3-6A26-4F54-A275-51D077148775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391AA829-0D4F-47FE-85B4-5E271316E157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391AA829-0D4F-47FE-85B4-5E271316E157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391AA829-0D4F-47FE-85B4-5E271316E157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391AA829-0D4F-47FE-85B4-5E271316E157}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

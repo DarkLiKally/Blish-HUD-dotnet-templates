@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <RootNamespace>blishhud-module-templatepack</RootNamespace>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0</PackageVersion>
+        <PackageId>BlishHUD.Templates</PackageId>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Title>BlishHUD Module template</Title>
+        <Authors>Blish HUD</Authors>
+        <Description>Tempaltes for creating new Blish HUD modules.</Description>
+        <PackageTags>dotnet-new;templates;blish_hud;blish;guild wars 2;module</PackageTags>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+        <Compile Remove="**\*" />
+        <None Include="README.md" Pack="true" PackagePath="\" />
+        <Content Update="templates\Blish_HUD.ModuleTemplate\manifest.json">
+          <Link>templates\Blish_HUD.Module.Template\manifest.json</Link>
+        </Content>
+        <Content Update="templates\Blish_HUD.ModuleTemplate\MyModuleModule.cs">
+          <Link>templates\Blish_HUD.Module.Template\MyModuleModule.cs</Link>
+        </Content>
+        <Content Update="templates\Blish_HUD.ModuleTemplate\README.md">
+          <Link>templates\Blish_HUD.Module.Template\README.md</Link>
+        </Content>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Blish HUD",
+  "classifications": [ "BlishHUD", "Library" ],
+  "identity": "BlishHUD.Module",
+  "name": "Blish HUD Module template",
+  "shortName": "blishhud-module",
+  "sourceName": "Blish_HUD.ModuleTemplate",
+  "preferNameDirectory":true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols":{
+    "moduleDisplayName": {
+      "type": "parameter",
+      "description": "Module display name",
+      "defaultValue": "My Module",
+      "replaces":"My Module"
+    },
+    "moduleName": {
+      "type": "parameter",
+      "description": "Module class name (no spaces or special characters)",
+      "defaultValue": "MyModule",
+      "replaces":"MyModule",
+      "fileRename": "MyModule"
+    },
+    "moduleNamespace": {
+      "type": "parameter",
+      "description": "Module namespace used in the manifest file. This is also the internal identifier for the module inside Blish HUD.",
+      "defaultValue": "me.my-module",
+      "replaces":"me.my-module"
+    },
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net472",
+          "description": "Target .NET Framework 4.7.2"
+        }
+      ],
+      "defaultValue": "net472",
+      "replaces": "net472"
+    }
+  }
+}
